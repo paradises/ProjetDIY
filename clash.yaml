@@ -145,9 +145,8 @@ Proxy:
   - name: "auto"
     type: url-test
     proxies:
-      - ss1
-      - ss2
-      - vmess1
+      - DO America
+      - Vultr JP
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
 
@@ -155,19 +154,8 @@ Proxy:
   - name: "fallback-auto"
     type: fallback
     proxies:
-      - ss1
-      - ss2
-      - vmess1
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-
-# load-balance 可以使相同 eTLD 请求在同一条代理线路上
-  - name: "load-balance"
-    type: load-balance
-    proxies:
-      - ss1
-      - ss2
-      - vmess1
+      - Vultr JP
+      - DO America
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
 
@@ -176,10 +164,9 @@ Proxy:
   - name: Proxy
     type: select
     proxies:
-      - ss1
-      - ss2
-      - vmess1
-      - auto
+     - auto
+     - Vultr JP
+     - DO America
 
 Rule:
 # Apple
