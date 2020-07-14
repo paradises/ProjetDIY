@@ -105,7 +105,7 @@ dns:
 #   若要了解更多关于 DoH/DoT 相关技术，请自行查阅规范文档。
 
 
-Proxy:
+Proxies:
 # shadowsocks
 # 所支持的加密方式与 go-shadowsocks2 保持一致
 # 支持加密方式： 
@@ -139,23 +139,14 @@ Proxy:
     ws-path: /vray
     # ws-headers:
     #   Host: v2ray.com
-    
- Proxy Group:
+
+proxy-groups:
 # url-test 可以自动选择与指定 URL 测速后，延迟最短的服务器
   - name: "auto"
     type: url-test
     proxies:
       - DO America
       - Vultr JP
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-
-# fallback 可以尽量按照用户书写的服务器顺序，在确保服务器可用的情况下，自动选择服务器
-  - name: "fallback-auto"
-    type: fallback
-    proxies:
-      - Vultr JP
-      - DO America
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
 
