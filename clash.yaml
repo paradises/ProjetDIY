@@ -64,7 +64,8 @@ dns:
   # fake-ip-filter: # fake-ip 白名单列表
   #   - '*.lan'
   #   - localhost.ptlogin2.qq.com
- nameserver:
+ 
+nameserver:
     - 1.2.4.8
     - 114.114.114.114
     - 223.5.5.5
