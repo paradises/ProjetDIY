@@ -65,7 +65,7 @@ dns:
   #   - '*.lan'
   #   - localhost.ptlogin2.qq.com
 
-  nameserver:
+ nameserver:
     - 1.2.4.8
     - 114.114.114.114
     - 223.5.5.5
@@ -104,8 +104,7 @@ dns:
 #   DoT: 以 tls:// 开头的 DNS 服务器。拥有更高的安全性和查询效率，但端口有可能被管制或封锁。
 #   若要了解更多关于 DoH/DoT 相关技术，请自行查阅规范文档。
 
-
-Proxies:
+proxies:
 # shadowsocks
 # 所支持的加密方式与 go-shadowsocks2 保持一致
 # 支持加密方式： 
@@ -123,7 +122,7 @@ Proxies:
     password: "cj930302rmyf"
     # udp: true  
 
- # vmess
+# vmess
 # 支持加密方式：auto / aes-128-gcm / chacha20-poly1305 / none
   - name: "Vultr JP"
     type: vmess
